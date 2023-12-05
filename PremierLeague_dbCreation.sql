@@ -333,7 +333,7 @@ insert into userTeamStats(userteam_id, season_id) values
 (9,22),
 (10,22);
 
-Insert into players(player_name, cost, pos, team_id) Values
+Insert into player(player_name, cost, pos, team_id) Values
 ('David Raya Martin', '4.9', 'GK', '1'),
 ('Aaron Ramsdale', '4.7', 'GK', '1'),
 ('Karl Hein', '4.0', 'GK', '1'),
@@ -355,7 +355,7 @@ Insert into players(player_name, cost, pos, team_id) Values
 ('Eddie Nketiah', '5.6', 'F', '1'),
 ('Gabriel Fernando de Jesus', '7.9', 'F', '1');
 
-INSERT INTO playerStats (player_id, season_id, apearances, wins, losses, goals, goals_conceded, assists, passes, crosses, blocked_shots, clearance, interception) VALUES
+INSERT INTO playerStats (player_id,season_id,apearances,wins,losses,goals,goals_conceded,assists,passes,crosses,blocked_shots,clearance,interception) VALUES
 (1, 22, 10, 6, 1, 0, 7, 0, 292, 0, 0, 0, 0),
 (2, 22, 5, 4, 0, 0, 4, 0, 126, 0, 0, 0, 0),
 (3, 22, 15, 10, 1, 1, 11, 1, 1120, 0, 2, 26, 9),
@@ -378,18 +378,19 @@ INSERT INTO playerStats (player_id, season_id, apearances, wins, losses, goals, 
 (20, 22, 10, 6, 0, 2, 0, 1, 183, 3, 4, 3, 5);
 
     
-Insert into teamStats(team_id,matches_played,wins,losses,goals,goals_conceded,clean_sheets) values
-('1','14','10','1','31'.'12','6'),
-('2','14','9','3','33','20','2'),
-('3','14','5','5','22','19','3'),
-('4','14','3','7','16','30','2'),
-('5','14','5','5','25','22','3'),
-('6','14','8','6','16','17','5'),
-('7','14','2','9','15','28','0'),
-('8','14','5','7','15','20','3'),
-('9','14','9','2','36','16','4'),
-('10','14','6','5','24','24','1'),
-('11','14','8','4','32','14','6');
+Insert into teamStats(team_id,season_id,matches_played,wins,losses,goals,goals_conceded,clean_sheets) Values
+('1','22','14','10','1','31','12','6'),
+('2','22','14','9','3','33','20','2'),
+('3','22','14','5','5','22','19','3'),
+('4','22','14','3','7','16','30','2'),
+('5','22','14','5','5','25','22','3'),
+('6','22','14','8','6','16','17','5'),
+('7','22','14','2','9','15','28','0'),
+('8','22','14','5','7','15','20','3'),
+('9','22','14','9','2','36','16','4'),
+('10','22','14','6','5','24','24','1'),
+('11','22','14','8','4','32','14','6');
+
 
 
 

@@ -306,8 +306,36 @@ insert into userteam(display_name, full_name, team_name) values
 ('SnailMan', 'Joe Shmoe', 'Goths'),
 ('Kira', 'Light Kamina', 'Shinigami');
 
+insert into fantasyLeagueMember values
+(1, 1, 1), -- Aqib owns LeagueID 1
+(2, 1, 0), -- Shakti and Andrew are members of fantasyleague_id 1
+(3, 1, 0),
+(2, 2, 1), -- Every fantasyleague must be owned by a user to mantain the schema
+(3, 3, 1), -- TODO create SQL statements for creating and joining leagues
+(4, 4, 1),
+(5, 5, 1),
+(6, 6, 1),
+(7, 7, 1),
+(8, 8, 1),
+(9, 9, 1),
+(10, 10, 1);
+
+insert into userTeamStats(userteam_id, season_id) values
+(1,22),
+(2,22),
+(3,22),
+(4,22),
+(5,22),
+(6,22),
+(7,22),
+(8,22),
+(9,22),
+(10,22);
+
 -- Sample SQL DML Statements
-SELECT * from fantasyFixtures
+
+
+/*SELECT * from fantasyFixtures
 WHERE SeasonID = 22;
 
 SELECT * from UserTeamStats

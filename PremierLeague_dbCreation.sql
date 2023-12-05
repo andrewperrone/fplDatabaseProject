@@ -294,6 +294,17 @@ Insert into team(team_name) values
 ("West Ham United FC"),
 ("NewCastle United");
 
+insert into userteam(display_name, full_name, team_name) values
+('AqibAshan03','Aqib Ashan', 'AqibsTeam'),
+('Shakti', 'Shakti', 'Shaktis Soldiers'),
+('App', 'Andrew Perrone', 'Andrews AAAAAAAAAAAAAAA'),
+('WhimsicalWombat', 'Will', 'Wombatants'),
+('Greg92', 'Greg', 'Team1'),
+('xXxTentacionxXx', 'John Doe', 'Joy Ride'),
+('Anonymous8753', 'Matt Smith', 'team'),
+('Billy Eyelash', 'Rebecca', 'Espiritus'),
+('SnailMan', 'Joe Shmoe', 'Goths'),
+('Kira', 'Light Kamina', 'Shinigami');
 
 -- Sample SQL DML Statements
 SELECT * from fantasyFixtures

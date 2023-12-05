@@ -280,7 +280,36 @@ insert into season values
 (20, '2021-08-14', '2022-05-22'),
 (21, '2022-08-05', '2023-05-28'),
 (22, '2023-08-11', '2024-05-19');
+
 -- Sample SQL DML Statements
+SELECT * from fantasyFixtures
+WHERE SeasonID = 22;
+
+SELECT * from UserTeamStats
+WHERE SeasonID = 22;
+
+SELECT * from UserTeamStats
+Where fantasyLeagueID = 256;
+
+SELECT * from fantasyFixtures
+WHERE fantasyLeagueID = 256;
+
+SELECT creator from fantasyLeagueMember
+WHERE UserTeamId = 10;
+
+SELECT * from fantasyTeamMember
+WHERE UserTeamID = 10;
+
+SELECT stats from PlayerStats
+Where PlayerID = 25 and SeasonID = 22;
+
+SELECT * from Player
+WHERE TeamID = 14;
+
+SELECT * from Fixtures
+WHERE TeamID = 14;
+
+
 
 -- Sample Views
 /*create view userteamstats_alltime as

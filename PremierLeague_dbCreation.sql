@@ -241,4 +241,4 @@ create table if not exists playerStats
 				on delete no action
 );
 
-
+-- Sample SQL DML Statements

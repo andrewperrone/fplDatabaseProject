@@ -104,19 +104,19 @@ create table if not exists fantasyTeamMember
 create table if not exists fixture
 (
 	fixture_id 		int		PRIMARY KEY auto_increment,
-    gameweek		int 	not null,
-    fixture_date 	date 	not null,
-    location		date	not null,
-    league_id		int 	not null,
-    season_id		int		not null,
-    home_team_id	int 	not null,
-    home_team_goals	int		not null,
-    away_team_id	int 	not null,
-    away_team_goals	int		not null,
-    forfeit			bool	default(0),
-    draw 			bool 	default(0),
+	gameweek		int 	not null,
+    	fixture_date 	date 	not null,
+    	location		date	not null,
+    	league_id		int 	default(1) not null,
+    	season_id		int		not null,
+    	home_team_id	int 	not null,
+    	home_team_goals	int		not null,
+    	away_team_id	int 	not null,
+    	away_team_goals	int		not null,
+    	forfeit			bool	default(0),
+    	draw 			bool 	default(0),
     
-    constraint fixture_fk_league
+    	constraint fixture_fk_league
 		foreign key (league_id)
 			references league(league_id)
 				on delete no action,

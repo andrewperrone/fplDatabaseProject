@@ -281,6 +281,20 @@ insert into season values
 (21, '2022-08-05', '2023-05-28'),
 (22, '2023-08-11', '2024-05-19');
 
+Insert into team(team_name) values
+("Arsenal FC"),
+("Aston Villa FC"),
+("Brentford FC"),
+("AFC Bournemouth"),
+("Chelsea FC"),
+("Manchester United FC"),
+("Luton Town FC"),
+("Everton FC"),
+("Manchester City FC"),
+("West Ham United FC"),
+("NewCastle United");
+
+
 -- Sample SQL DML Statements
 SELECT * from fantasyFixtures
 WHERE SeasonID = 22;

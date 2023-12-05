@@ -68,12 +68,12 @@ create table if not exists fantasyLeagueMember
 create table if not exists player
 (
 	player_id 		int 		PRIMARY KEY auto_increment,
-    player_name 	varchar(50) not null,
-    cost			int 		default(5) not null,
-    pos ENUM('GK', 'LB', 'CLB', 'CRB', 'RB', 'DM', 'LM', 'CLM', 'CRM', 'RM', 'ST', 'R1', 'R2', 'R3', 'R4')  not null,
-    team_id			int			not null,
-    league_id		int 		not null,
-    constraint player_fk_team
+    	player_name 		varchar(50) not null,
+   	cost			int 		default(5) not null,
+    	pos ENUM('GK', 'LB', 'CLB', 'CRB', 'RB', 'DM', 'LM', 'CLM', 'CRM', 'RM', 'ST', 'R1', 'R2', 'R3', 'R4')  not null,
+	team_id			int,
+    	league_id		int 		default(1) not null,
+    	constraint player_fk_team
 		foreign key (team_id)
 			references team(team_id)
 				on delete no action,

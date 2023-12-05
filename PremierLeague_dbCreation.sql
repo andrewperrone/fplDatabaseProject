@@ -245,7 +245,7 @@ create table if not exists playerStats
 insert into league values
 (1, 'Premier League');
 
-insert into fantasyLeague(league_name) values
+insert into fantasyLeague(fantasyleague_name) values
 ('Scholastica FC'),
 ('Fossil Premier League'),
 ('Super-charged Sparrows'),

@@ -39,7 +39,7 @@ create table if not exists team
 (
 	team_id 		int 		PRIMARY KEY auto_increment, -- Primary Key
     team_name		varchar(50) not null,
-    league_id 		int 		not null,
+    league_id 		int 		default(1) not null,
     
     constraint team_fk_league
 		foreign key (league_id)
@@ -244,6 +244,18 @@ create table if not exists playerStats
 -- Manual Data Input
 insert into league values
 (1, 'Premier League');
+
+insert into fantasyLeague(league_name) values
+('Scholastica FC'),
+('Fossil Premier League'),
+('Super-charged Sparrows'),
+('Diogenese'),
+('The Concatonators'),
+('Lupus League'),
+('NYCFC'),
+('Ungoliant United'),
+('Sportsball'),
+('GameGame');
 
 insert into season values
 (1, '2002-08-17', '2003-05-11'),

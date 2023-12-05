@@ -242,3 +242,6 @@ create table if not exists playerStats
 );
 
 -- Sample SQL DML Statements
+
+-- Sample Views
+

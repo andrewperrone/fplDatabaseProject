@@ -391,36 +391,6 @@ Insert into teamStats(team_id,matches_played,wins,losses,goals,goals_conceded,cl
 ('10','14','6','5','24','24','1'),
 ('11','14','8','4','32','14','6');
 
--- Sample SQL DML Statements
-
-
-/*SELECT * from fantasyFixtures
-WHERE SeasonID = 22;
-
-SELECT * from UserTeamStats
-WHERE SeasonID = 22;
-
-SELECT * from UserTeamStats
-Where fantasyLeagueID = 256;
-
-SELECT * from fantasyFixtures
-WHERE fantasyLeagueID = 256;
-
-SELECT creator from fantasyLeagueMember
-WHERE UserTeamId = 10;
-
-SELECT * from fantasyTeamMember
-WHERE UserTeamID = 10;
-
-SELECT stats from PlayerStats
-Where PlayerID = 25 and SeasonID = 22;
-
-SELECT * from Player
-WHERE TeamID = 14;
-
-SELECT * from Fixtures
-WHERE TeamID = 14;
-
 
 
 -- Sample Views

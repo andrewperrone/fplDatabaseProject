@@ -294,7 +294,7 @@ Insert into team(team_name) values
 ("Arsenal FC"),
 ("Aston Villa FC"),
 ("Brentford FC"),
-('Burnley FC')
+('Burnley FC'),
 ("AFC Bournemouth"),
 ("Chelsea FC"),
 ("Manchester United FC"),

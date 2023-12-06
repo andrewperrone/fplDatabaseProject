@@ -140,7 +140,7 @@ alter column season_id set default(22);
 
 create table if not exists fantasyFixture
 (
-	fixture_id 			int		PRIMARY KEY auto_increment,
+	fantasyfixture_id 	int		PRIMARY KEY auto_increment,
     gameweek			int 	default(0) not null,
     fantasyleague_id	int 	not null,
     season_id			int		default(1) not null,

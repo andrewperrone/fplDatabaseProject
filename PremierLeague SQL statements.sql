@@ -5,7 +5,6 @@ FROM player
 JOIN team ON player.team_id = team.team_id
 WHERE team.team_name = 'Arsenal';
 
-
 #2. Get the total points scored by a users fantasy team in a specific season
 SELECT userteam.team_name, SUM(playerstats.points) AS total_points
 FROM userteam
@@ -19,7 +18,6 @@ FROM users
 JOIN league ON users.user_id = league.user_id
 JOIN fantasyleague ON league.league_id = fantasyleague.league_id
 WHERE fantasyleague.season_id = 1;
-
 
 #4Retrieve the upcoming fixtures for a specific team:
 SELECT fixture.fixture_id, home_team.team_name AS home_team, away_team.team_name AS away_team, fixture.date

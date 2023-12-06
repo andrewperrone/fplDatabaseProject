@@ -252,21 +252,6 @@ create table if not exists playerStats
 );
 
 -- Manual Data Input
-insert into league values
-(1, 'Premier League');
-
-insert into fantasyLeague(fantasyleague_name) values
-('Scholastica FC'),
-('Fossil Premier League'),
-('Super-charged Sparrows'),
-('Diogenese'),
-('The Concatonators'),
-('Lupus League'),
-('NYCFC'),
-('Ungoliant United'),
-('Sportsball'),
-('GameGame');
-
 insert into season values
 (1, '2002-08-17', '2003-05-11'),
 (2, '2003-08-16', '2004-05-15'),
@@ -291,6 +276,21 @@ insert into season values
 (21, '2022-08-05', '2023-05-28'),
 (22, '2023-08-11', '2024-05-19');
 
+insert into league values
+(1, 'Premier League'); -- Not sure if IDs start at 0 or 1
+
+insert into fantasyLeague(fantasyleague_name) values
+('Scholastica FC'),
+('Fossil Premier League'),
+('Super-charged Sparrows'),
+('Diogenese'),
+('The Concatonators'),
+('Lupus League'),
+('NYCFC'),
+('Ungoliant United'),
+('Sportsball'),
+('GameGame');
+
 Insert into team(team_name) values
 ("Arsenal FC"),
 ("Aston Villa FC"),
@@ -304,7 +304,7 @@ Insert into team(team_name) values
 ("West Ham United FC"),
 ("NewCastle United");
 
-insert into userteam(display_name, full_name, team_name) values
+insert into userTeam(display_name, full_name, team_name) values
 ('AqibAshan03','Aqib Ashan', 'AqibsTeam'),
 ('Shakti', 'Shakti', 'Shaktis Soldiers'),
 ('App', 'Andrew Perrone', 'Andrews AAAAAAAAAAAAAAA'),
@@ -342,7 +342,7 @@ insert into userTeamStats(userteam_id, season_id) values
 (9,22),
 (10,22);
 
-Insert into player(player_name, cost, pos, team_id) Values
+insert into player(player_name, cost, pos, team_id) values
 ('David Raya Martin', '4.9', 'GK', '1'),
 ('Aaron Ramsdale', '4.7', 'GK', '1'),
 ('Karl Hein', '4.0', 'GK', '1'),
@@ -364,7 +364,7 @@ Insert into player(player_name, cost, pos, team_id) Values
 ('Eddie Nketiah', '5.6', 'F', '1'),
 ('Gabriel Fernando de Jesus', '7.9', 'F', '1');
 
-INSERT INTO playerStats (player_id,season_id,apearances,wins,losses,goals,goals_conceded,assists,passes,crosses,blocked_shots,clearance,interception) VALUES
+insert into playerStats (player_id,season_id,apearances,wins,losses,goals,goals_conceded,assists,passes,crosses,blocked_shots,clearance,interception) values
 (1, 22, 10, 6, 1, 0, 7, 0, 292, 0, 0, 0, 0),
 (2, 22, 5, 4, 0, 0, 4, 0, 126, 0, 0, 0, 0),
 (3, 22, 15, 10, 1, 1, 11, 1, 1120, 0, 2, 26, 9),
@@ -385,9 +385,8 @@ INSERT INTO playerStats (player_id,season_id,apearances,wins,losses,goals,goals_
 (18, 22, 11, 7, 1, 0, 0, 0, 317, 3, 2, 2, 2),
 (19, 22, 14, 10, 1, 5, 0, 0, 152, 0, 6, 3, 3),
 (20, 22, 10, 6, 0, 2, 0, 1, 183, 3, 4, 3, 5);
-
     
-Insert into teamStats(team_id,season_id,matches_played,wins,losses,goals,goals_conceded,clean_sheets) Values
+insert into teamStats(team_id,season_id,matches_played,wins,losses,goals,goals_conceded,clean_sheets) values
 ('1','22','14','10','1','31','12','6'),
 ('2','22','14','9','3','33','20','2'),
 ('3','22','14','5','5','22','19','3'),
@@ -399,9 +398,6 @@ Insert into teamStats(team_id,season_id,matches_played,wins,losses,goals,goals_c
 ('9','22','14','9','2','36','16','4'),
 ('10','22','14','6','5','24','24','1'),
 ('11','22','14','8','4','32','14','6');
-
-
-
 
 -- Sample Views
 /*create view userteamstats_alltime as

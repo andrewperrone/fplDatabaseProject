@@ -113,8 +113,8 @@ create table if not exists fixture
 	home_team_goals	int			not null,
 	away_team_id	int 		not null,
 	away_team_goals	int			not null,
-	forfeit			bool		default(0),
-	draw 			bool 		default(0),
+	forfeit			bool		default(0) not null,
+	draw 			bool 		default(0) not null,
 
 	constraint fixture_fk_league
 		foreign key (league_id)

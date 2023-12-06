@@ -11,7 +11,7 @@ create table if not exists season
 
 create table if not exists league
 (
-	league_id 	int 		PRIMARY KEY auto_increment, -- Primary Key
+	league_id 		int 			PRIMARY KEY auto_increment, -- Primary Key
 	league_name 	varchar(50) 	not null
 );
 

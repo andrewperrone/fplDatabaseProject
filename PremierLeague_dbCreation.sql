@@ -104,7 +104,7 @@ create table if not exists fantasyTeamMember
 create table if not exists fixture
 (
 	fixture_id 		int			PRIMARY KEY auto_increment,
-	gameweek		int 		not null,
+	gameweek		int 		default(0) not null,
 	fixture_date 	date 		not null,
 	location		varchar(50)	not null,
 	league_id		int 		default(1) not null,

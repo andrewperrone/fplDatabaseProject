@@ -17,7 +17,7 @@ create table if not exists league
 
 create table if not exists fantasyLeague
 (
-	fantasyleague_id 	int 		PRIMARY KEY auto_increment, -- Primary Key
+	fantasyleague_id 	int 			PRIMARY KEY auto_increment, -- Primary Key
     fantasyleague_name 	varchar(50) 	not null
 );
 

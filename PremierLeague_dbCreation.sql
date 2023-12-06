@@ -400,7 +400,48 @@ insert into teamStats(team_id,season_id,matches_played,wins,losses,goals,goals_c
 ('11','22','14','8','4','32','14','6');
 
 -- Sample Views
-/*create view userteamstats_alltime as
-select * 
-from userTeamStats
-where user_id = 1;
+-- Sample Views
+-- All Time teamStats (includes every instance of team stats from other seasons)
+create view total_teamstats as
+select s.team_id, 
+	(select team_name from team t where t.team_id = s.team_id) as 'team_name',
+	sum(matches_played) as 'matches_played', 
+    sum(wins) as 'wins', 
+    sum(losses) as 'losses',
+    sum(goals) as 'goals',
+    sum(goals_conceded) as 'goals_conceded',
+    sum(clean_sheets) as 'clean_sheets'
+from teamStats s
+group by s.team_id;
+
+-- All Time userTeamStats
+create view total_userteamstats as
+select s.userteam_id, 
+	(select display_name from userTeam u where u.userteam_id = s.userteam_id) as 'display_name',
+    (select team_name from userTeam u where u.userteam_id = s.userteam_id) as 'team_name',
+	sum(matches_played) as 'matches_played', 
+    sum(wins) as 'wins', 
+    sum(losses) as 'losses',
+    sum(goals) as 'goals',
+    sum(goals_conceded) as 'goals_conceded',
+    sum(clean_sheets) as 'clean_sheets'
+from userTeamStats s
+group by s.userteam_id;
+
+-- All Time playerStats
+create view total_playerstats as
+select s.player_id, 
+	(select player_name from player p where p.player_id = s.player_id) as 'player_name',
+	sum(apearances) as 'apearances', 
+    sum(wins) as 'wins', 
+    sum(losses) as 'losses',
+    sum(goals) as 'goals',
+    sum(goals_conceded) as 'goals_conceded',
+    sum(assists) as 'assists',
+    sum(passes) as 'passes',  
+    sum(crosses) as 'crosses',
+    sum(blocked_shots) as 'blocked_shots',
+    sum(clearance) as 'clearance',
+    sum(interception) as 'interception'
+from playerStats s
+group by s.player_id;

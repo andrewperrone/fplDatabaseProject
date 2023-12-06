@@ -376,6 +376,24 @@ insert into player(player_name, cost, pos, team_id) values
 ('Eddie Nketiah', '5.6', 'F', '1'),
 ('Gabriel Fernando de Jesus', '7.9', 'F', '1');
 
+insert into fantasyTeamMember(pos, userteam_id, player_id) values
+('GK', '1', '1'),
+('LB', '1', '2'),
+('CLB', '1', '3'),
+('CRB', '1', '4'),
+('RB', '1', '5'),
+('DM', '1', '6'),
+('LM', '1', '7'),
+('CLM', '1', '8'),
+('CRM', '1', '9'),
+('RM', '1', '10'),
+('ST', '1', '11'),
+('R1', '1', '12'),
+('R2', '1', '13'),
+('R3', '1', '14'),
+('R4', '1', '15');
+
+
 INSERT INTO playerStats (player_id,season_id,apearances,wins,losses,goals,goals_conceded,assists,passes,crosses,blocked_shots,clearance,interception) VALUES
 (1, 22, 10, 6, 1, 0, 7, 0, 292, 0, 0, 0, 0),
 (2, 22, 5, 4, 0, 0, 4, 0, 126, 0, 0, 0, 0),

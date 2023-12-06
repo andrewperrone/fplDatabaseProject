@@ -445,3 +445,6 @@ select s.player_id,
     sum(interception) as 'interception'
 from playerStats s
 group by s.player_id;
+
+-- TODO Create secure user view (prevent seeing real names, passwords and emails)
+-- TODO Create user view so users can see their own passwords and emails

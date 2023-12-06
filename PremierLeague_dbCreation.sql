@@ -294,6 +294,7 @@ Insert into team(team_name) values
 ("Arsenal FC"),
 ("Aston Villa FC"),
 ("Brentford FC"),
+('Burnley FC')
 ("AFC Bournemouth"),
 ("Chelsea FC"),
 ("Manchester United FC"),
@@ -301,7 +302,8 @@ Insert into team(team_name) values
 ("Everton FC"),
 ("Manchester City FC"),
 ("West Ham United FC"),
-("NewCastle United");
+("NewCastle United")
+('Tottenham Hotspur FC');
 
 insert into userTeam(display_name, full_name, team_name) values
 ('AqibAshan03','Aqib Ashan', 'AqibsTeam'),

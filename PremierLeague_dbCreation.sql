@@ -343,6 +343,19 @@ insert into userTeamStats(userteam_id, season_id) values
 (9,22),
 (10,22);
 
+INSERT INTO fixture(fixture_date, location, home_team_id, home_team_goals, away_team_id, away_team_goals) VALUES (
+	('2023-11-25', 'GTech Community Stadium, Brentford', '3', '0', '1', '1'),
+	('2023-09-30', 'Vitality Stadium, Bournemouth',		 '5', '0', '1', '4'),
+	('2023-10-21', 'Stamford Bridge, London', 			 '6', '2', '1', '2'),
+	('2023-09-03', 'Emirates Stadium, London', 			 '1', '3', '7', '1'),
+	('2023-12-05', 'Kelinworth Road, Luton', 			 '8', '3', '1', '4'),
+	('2023-09-17', 'Goodison Park, Liverpool', 			 '9', '0', '1', '1'),
+	('2023-10-08', 'Emirates Stadium, London',  		 '1', '1','10', '0'),
+	('2023-11-04', 'St James Park, Newcastle', 			'12', '0', '1', '1'),
+	('2023-11-11', 'Emirates Stadium, London',			 '1', '3', '4', '1'),
+	('2023-09-24', 'Emirates Stadium, London', 			 '1', '2','13', '2')
+);
+
 insert into player(player_name, cost, pos, team_id) values
 ('David Raya Martin', '4.9', 'GK', '1'),
 ('Aaron Ramsdale', '4.7', 'GK', '1'),
